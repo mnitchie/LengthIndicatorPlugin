@@ -3,13 +3,40 @@
     <head>
         <meta charset="US-ASCII">
         <title>Length Indicator</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="./scripts/LengthIndicator.js"></script>
         <script src="./scripts/main.js"></script>
     </head>
     
     <body>
-        <input>
-        <br>
+        <div id="mainContainer">
+            <div id="header">
+                <h1>jQuery Length Indicator Plugin</h1>
+                <p>A simple text input length indicator and enforcement plugin for jQuery</p>
+            </div>
+            <div id="body">
+                <p>Given a text input element, the LengthIndicator plugin will
+                add a snippet of text above the element indicating how many
+                more characters that the user is allowed to enter, and will
+                prevent the user form adding characters beyond that limit.</p>
+                <p>Default functionality turns this:</p>
+                <input type="text" />
+                <p>Into this:</p>
+                <input type="text" id="demo" />
+                <p>Simply call <code>.lengthIndicator()</code> on your jQuery object to use</p>
+                <p>Make sure that you have a text-input element selected (works on text areas as well)</p>
+                <p>Configuration options</p>
+                <pre>
+                    myElement.lengthIndicator({
+                        wrapperClass: // the class of the wrapper that will be placed around the element
+                        hintClass: // the class of the hint text. "Characters Remaining"
+                        outputClass: // the class of the output text. "144"
+                        hintText: // The text of the Hint. Default is "Characters remaining"
+                        maxLength: // The max allowed length of the input element. Default is 144
+                    });
+                </pre>                
+            </div>
+        </div>
     </body>
 </html>

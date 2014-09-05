@@ -1,0 +1,17 @@
+@CHARSET "US-ASCII";
+
+body {
+	background-color: grey;
+}
+
+#mainContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	background-color: white;
+	padding: 5px;
+}
+
+#header {
+	text-align: center;
+}
