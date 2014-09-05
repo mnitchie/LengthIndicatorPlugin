@@ -14,7 +14,7 @@ Options:
 $('someInput').lengthIndicator({
   wrapperClass: // the class of the wrapper that will be placed around the element
   hintClass: // the class of the hint text. "Characters Remaining"
-  outputClass: // the class of the output text. Default is 
+  outputClass: // the class of the output text. "144"
   hintText: // The text of the Hint. Default is "Characters remaining"
   maxLength: // The max allowed length of the input element. Default is 144
 });
